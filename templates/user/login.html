@@ -3,8 +3,8 @@
 {% block title %}
     登录&注册 | KuriLab
 {% endblock %}
-{% block mycss %}
-    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+{% block myheader %}
+    {% include "components/header_all.html" %}
 {% endblock %}
 {% block content %}
     <section>
@@ -46,13 +46,6 @@
     </section>
 {% endblock %}
 {% block myjs %}
-    <script>
-        function toggle() {
-            let popup = document.getElementById('popup')
-            popup.classList.toggle('active')
-        }
-    </script>
-
     <script type="text/javascript">
         function toggleForm() {
             let container = document.querySelector('.container');

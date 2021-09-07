@@ -1,15 +1,14 @@
 {% extends "base.html" %}
 {% load static %}
+{% block myheader %}
+    {% include "components/header_all.html" %}
+{% endblock %}
 {% block content %}
     <!-- hero section -->
     <section id="hero">
-
         <div class="container-xl">
-
             <div class="row gy-4">
-
                 <div class="col-lg-8">
-
                     <!-- featured post large -->
                     <div class="post featured-post-lg">
                         <div class="details clearfix">
@@ -27,11 +26,8 @@
                             </div>
                         </a>
                     </div>
-
                 </div>
-
                 <div class="col-lg-4">
-
                     <!-- post tabs -->
                     <div class="post-tabs rounded bordered">
                         <!-- tab navs -->
@@ -980,7 +976,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- widget advertisement -->
                         <div class="widget no-container rounded text-md-center">
                             <span class="ads-title">- Sponsored Ad -</span>
@@ -988,7 +983,6 @@
                                 <img src="{% static 'images/ads/ad-360.png' %}" alt="Advertisement"/>
                             </a>
                         </div>
-
                         <!-- widget tags -->
                         <div class="widget rounded">
                             <div class="widget-header text-center">
@@ -1003,13 +997,9 @@
                                 <a href="#" class="tag">#Celebrities</a>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
     </section>
 
