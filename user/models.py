@@ -3,7 +3,7 @@ from django.db import models
 
 
 class UserProfile(AbstractUser):
-    mobile = models.CharField(max_length=11, verbose_name='手机号码', unique=True)
+    phone = models.CharField(max_length=11, verbose_name='手机号码', unique=True)
     avatar = models.ImageField(upload_to='uploads/%y/%m/d', default="")
 
     class Meta:
