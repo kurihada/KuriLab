@@ -4,46 +4,60 @@
     登录&注册 | KuriLab
 {% endblock %}
 {% block myheader %}
-    {% include "components/header_all.html" %}
+    {% include "widget/header_all.html" %}
 {% endblock %}
 {% block content %}
-    <section class="section-login">
-        <div class="container">
-            <div class="user loginBx">
-                <div class="imgBx"><img src="{% static 'images/login/login.webp' %}" alt=""></div>
-                <div class="formBx">
-                    <form method="post" name="login">
-                        <h2>登录</h2>
-                        <label>
-                            <input type="text" name="inusername" placeholder="用户名">
-                            <input type="password" name="inpassword" placeholder="密码">
-                            <input type="submit" value="登录">
-                        </label>
-                        <p class="signup">还没有账号？<a href="#" class="fa fa-hand-o-right" onclick="toggleForm();">马上注册</a>
-                        </p>
-                    </form>
-                </div>
-            </div>
+    <section class="main-content">
+        <div class="container-xl">
+            <div class="row gy-1">
+                <div class="col-lg-8">
+                    <section class="section-login">
+                        <div class="container">
+                            <div class="user loginBx">
+                                <div class="imgBx"><img src="{% static 'images/login/login.webp' %}" alt=""></div>
+                                <div class="formBx">
+                                    <form method="post" name="login">
+                                        <h2>登录</h2>
+                                        <label>
+                                            <input type="text" name="inusername" placeholder="用户名">
+                                            <input type="password" name="inpassword" placeholder="密码">
+                                            <input type="submit" value="登录">
+                                        </label>
+                                        <p class="signup">还没有账号？<a href="#" class="fa fa-hand-o-right"
+                                                                   onclick="toggleForm();">马上注册</a>
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
 
-            <div class="user singupBx">
-                <div class="formBx">
-                    <form method="post" name="register">
-                        <h2>注册</h2>
-                        <label>
-                            <input type="text" name="upusername" placeholder="用户名">
-                            <input type="email" name="upemail" placeholder="邮箱地址">
-                            <input type="password" name="uppassword" placeholder="密码">
-                            <input type="password" name="uprepassword" placeholder="确认密码">
-                            <input type="submit" value="注册">
-                        </label>
-                        <p class="signup">已经有账号了？<a href="#" class="fa fa-hand-o-right" onclick="toggleForm();">马上登录</a>
-                        </p>
-                    </form>
+                            <div class="user singupBx">
+                                <div class="formBx">
+                                    <form method="post" name="register">
+                                        <h2>注册</h2>
+                                        <label>
+                                            <input type="text" name="upusername" placeholder="用户名">
+                                            <input type="email" name="upemail" placeholder="邮箱地址">
+                                            <input type="password" name="uppassword" placeholder="密码">
+                                            <input type="password" name="uprepassword" placeholder="确认密码">
+                                            <input type="submit" value="注册">
+                                        </label>
+                                        <p class="signup">已经有账号了？<a href="#" class="fa fa-hand-o-right"
+                                                                    onclick="toggleForm();">马上登录</a>
+                                        </p>
+                                    </form>
+                                </div>
+                                <div class="imgBx"><img src="{% static 'images/login/register.webp' %}" alt=""></div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-                <div class="imgBx"><img src="{% static 'images/login/register.webp' %}" alt=""></div>
+                <div class="col-lg-4">
+                    {% include "widget/about.html" %}
+                </div>
             </div>
         </div>
     </section>
+
 {% endblock %}
 {% block myjs %}
     <script type="text/javascript">

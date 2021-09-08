@@ -1100,7 +1100,6 @@ body.down .header-default.clone, body.down .header-personal nav.clone, body.down
 .section-login {
     position: relative;
     min-height: 100vh;
-    background: pink;
     display: flex;
     justify-content: center;
     align-items: center;

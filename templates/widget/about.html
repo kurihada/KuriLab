@@ -1,0 +1,11 @@
+{% load static %}
+<!-- widget about -->
+<div class="widget rounded">
+    <div class="widget-about data-bg-image text-center" data-bg-image="{% static 'images/map-bg.png' %}">
+        <img src="{% static 'images/logo.svg' %}" alt="logo" class="mb-4"/>
+        <p class="mb-4">Hello, We’re content writer who is fascinated by content fashion,
+            celebrity and lifestyle. We helps clients bring the right content to the right
+            people.</p>
+        {% include "widget/social_icons.html" %}
+    </div>
+</div>
