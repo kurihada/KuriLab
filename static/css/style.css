@@ -759,6 +759,8 @@ body.down .header-default.clone, body.down .header-personal nav.clone, body.down
 }
 
 .navbar-brand {
+    width: 150px;
+    height: 50px;
     padding-top: 0;
     padding-bottom: 0;
     margin-right: 0;
